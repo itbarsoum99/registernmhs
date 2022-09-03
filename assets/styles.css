@@ -298,8 +298,12 @@ legend {
     margin-bottom: 2.5vh;
     margin-top: 2.5vh;
   }
-  .action h2, .why h2 {
-    font-size: 3.8em;
+  .action h2 {
+    font-size: 3.5em;
+  }
+
+  .why h2 {
+    font-size: 4em;
   }
   .goal .box {
     width: initial;
