@@ -287,8 +287,8 @@ legend {
     max-width: 70vw;
     padding: 3em;
   }
-  .action h2 {
-    font-size: 4.2em;
+  .action h2, .why h2 {
+    font-size: 3.8em;
   }
   .goal .box {
     width: initial;
@@ -336,6 +336,7 @@ legend {
     
   }
   .why-container .box p {
+    font-size: 3em;
     margin-block: 0;
   }
   a::after {
