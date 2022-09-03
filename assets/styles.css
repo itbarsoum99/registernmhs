@@ -288,9 +288,15 @@ legend {
 
 
 @media (pointer: coarse) {
+  .action {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
   .action .box {
     max-width: 70vw;
     padding: 3em;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
   }
   .action h2, .why h2 {
     font-size: 3.8em;
