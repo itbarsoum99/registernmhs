@@ -77,6 +77,11 @@ a::after {
   text-align: center;
 }
 
+.goal fieldset h1 {
+  line-height: initial;
+  margin-block: -18%;
+}
+
 .goal hl {
   -webkit-text-stroke-color: var(--dark);
 }
