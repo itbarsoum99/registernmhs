@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --dark: #1a1c1a;
+  --light: #f9f7f1;
+  --grey: #313431;
+  --green: #94b59b;
+  --lightgreen: #aec7b3;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+h1 {
+  font-size: 13.75vw;
+  margin-block: 0;
+  line-height: 95%;
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+hl {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--light);
+  font-style: normal;
+}
+
+a {
+ color: #79b2c9;
+}
+
+a::after {
+  content: "↗️";
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+
+::selection {
+  background-color: transparent;
+}
+
+.header {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 95vh;
+  text-align: center;
+}
+
+.goal hl {
+  -webkit-text-stroke-color: var(--dark);
+}
+
+.goal h2 {
+  font-size: 3em;
+  font-style: italic;
+  margin-block: 0;
+}
+
+.box {
+  padding: 5em;
+  border: 1px solid var(--dark);
+  margin: auto;
+  display: flex-item;
+}
+
+.goal .box {
+  width: fit-content;
+}
+
+legend {
+  text-align: left;
+  border: 1px solid var(--dark);
+  padding: 0 7px;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.action .box {
+  min-width: 20vw;
+  max-width: 30vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.action hl {
+  -webkit-text-stroke-color: var(--dark);
+  -webkit-text-stroke-width: 1px;
+}
+
+.action h2 {
+  font-size: 2.5em;
+  font-style: italic;
+  margin-block: 0;
+}
+
+.why table {
+  height: 100vh;
+  border-spacing: 0;
+}
+
+.why hl {
+  -webkit-text-stroke-color: var(--dark);
+}
+
+.why td:nth-of-type(1) {
+  background-color: var(--green);
+}
+
+.why td:nth-of-type(2) {
+  background-color: var(--lightgreen);
+}
+
+.why td {
+  width: 50vw;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 3em;
+  padding: 0 5vw;
+  line-height: 100%;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-container .box {
+  min-width: 20vw;
+  max-width: 30vw;
+  margin-bottom: 10vh;
+  min-height: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.why-container .box p {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#a-div {
+  width: fit-content;
+}
+
+.footer a{
+  font-weight: 500;
+  display: block;
+  font-size: 1.4em;
+  margin-block: 0;
+  padding: 0.5em;
+}
+
+.footer fieldset legend {
+  color: var(--light);
+  border-color: var(--light);
+}
+
+@media (max-width: 1250px) {
+  .action .box {
+    max-width: 50vw;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .action {
+    flex-direction: column;
+  }
+  .action .box {
+    max-width: 60vw;
+    padding: 3em;
+  }
+  .action h2 {
+    font-size: 2.2em;
+  }
+  .goal .box {
+    width: initial;
+    max-width: 55vw;
+    padding: 3em 2em 2em 2em;
+  }
+  .goal .box hl {
+    font-size: 2em;
+  }
+  table, thead, tbody, th, tr {
+    display: block;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .why table {
+    height: initial;
+  }
+
+  .why td:nth-of-type(1) {
+    min-height: 20vh;
+    background-color: var(--lightgreen);
+    justify-content: end;
+    padding-bottom: 0;
+  }
+
+  .why h2 {
+    padding: 0 10vw;
+  }
+  .why-container {
+    padding: 0 0 5vh 0;
+  }
+  .why-container .box {
+    width: initial;
+    max-width: 55vw;
+    padding: 3em 2em 3em 2em;
+    margin-bottom: 2vh;
+    
+  }
+  .why-container .box p {
+    margin-block: 0;
+  }
+
+
+}
+
+
+
+@media (pointer: coarse) {
+  .action .box {
+    max-width: 85vw;
+  }
+}
