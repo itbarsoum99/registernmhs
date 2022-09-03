@@ -284,6 +284,63 @@ legend {
 
 @media (pointer: coarse) {
   .action .box {
-    max-width: 85vw;
+    max-width: 70vw;
+    padding: 3em;
   }
+  .action h2 {
+    font-size: 4.2em;
+  }
+  .goal .box {
+    width: initial;
+    max-width: 55vw;
+    padding: 7em;
+  }
+  .goal .box hl {
+    font-size: 2em;
+  }
+  table, thead, tbody, th, tr {
+    display: block;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .why table {
+    height: initial;
+  }
+
+  .why td:nth-of-type(1) {
+    min-height: 20vh;
+    background-color: var(--lightgreen);
+    justify-content: end;
+    padding-bottom: 0;
+  }
+
+  .why h2 {
+    padding: 0 10vw;
+  }
+  .why-container {
+    padding: 0 0 5vh 0;
+  }
+  .why-container .box {
+    width: initial;
+    max-width: 55vw;
+    padding: 3em 2em 3em 2em;
+    margin-bottom: 2vh;
+    
+  }
+  .why-container .box p {
+    margin-block: 0;
+  }
+  a::after {
+    content:"";
+  }
+
+
 }
