@@ -341,12 +341,15 @@ legend {
     
   }
   .why-container .box p {
-    font-size: 3em;
+    font-size: 2.7em;
     margin-block: 0;
   }
   a::after {
     content:"";
   }
+
+  legend {
+    font-size: 1.4em;
 
 
 }
