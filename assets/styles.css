@@ -301,6 +301,9 @@ legend {
   .action h2 {
     font-size: 3.5em;
   }
+  .action hl {
+    -webkit-text-stroke-width: 2px;
+  }
 
   .why h2 {
     font-size: 4.2em;
