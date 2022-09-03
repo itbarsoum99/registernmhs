@@ -356,6 +356,7 @@ legend {
 
   legend {
     font-size: 1.4rem;
+    width: fit-content;
   }
   .why legend {
     background-color: var(--lightgreen);
