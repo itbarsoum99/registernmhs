@@ -356,6 +356,15 @@ legend {
 
   legend {
     font-size: 1.4rem;
-}
+  }
+  .why legend {
+    background-color: var(--lightgreen);
+  }
+  .action legend, .goal legend {
+    background-color: var(--light);
+  }
+  .footer legend {
+    background-color: var(--grey);
+  }
 
 }
