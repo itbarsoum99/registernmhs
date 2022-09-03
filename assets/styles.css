@@ -332,7 +332,9 @@ legend {
   .why table {
     height: initial;
   }
-
+  .why {
+    background-color: var(--lightgreen);
+  }
   .why td:nth-of-type(1) {
     min-height: 20vh;
     background-color: var(--lightgreen);
