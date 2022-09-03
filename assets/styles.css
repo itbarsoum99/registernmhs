@@ -375,4 +375,11 @@ legend {
     background-color: var(--grey);
   }
 
+  .footer a {
+    font-size: 2.4em;
+  }
+  .goal {
+    min-height: 70vh;
+  }
+
 }
